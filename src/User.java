@@ -33,7 +33,12 @@ public class User {
     return address;
   }
 
-  public static class UserBuilder {
+  @Override
+  public String toString() {
+	  return "User [firstName=" + firstName + ", lastName=" + lastName + "]";
+  }
+
+public static class UserBuilder {
     private final String firstName;
     private final String lastName;
     private String dob;
