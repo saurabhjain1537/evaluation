@@ -1,14 +1,14 @@
 public class User {
   private final String firstName; // required
   private final String lastName; // required
-  private final int age; // optional
+  private final String dob; // optional
   private final String phone; // optional
   private final String address; // optional
 
   private User(UserBuilder builder) {
     this.firstName = builder.firstName;
     this.lastName = builder.lastName;
-    this.age = builder.age;
+    this.dob = builder.dob;
     this.phone = builder.phone;
     this.address = builder.address;
   }
@@ -21,8 +21,8 @@ public class User {
     return lastName;
   }
 
-  public int getAge() {
-    return age;
+  public String getDob() {
+    return dob;
   }
 
   public String getPhone() {
@@ -36,7 +36,7 @@ public class User {
   public static class UserBuilder {
     private final String firstName;
     private final String lastName;
-    private int age;
+    private String dob;
     private String phone;
     private String address;
 
@@ -45,8 +45,8 @@ public class User {
       this.lastName = lastName;
     }
 
-    public UserBuilder age(int age) {
-      this.age = age;
+    public UserBuilder dob(String dob) {
+      this.dob = dob;
       return this;
     }
 
