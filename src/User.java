@@ -1,14 +1,14 @@
 public class User {
   private final String firstName; // required
   private final String lastName; // required
-  private final String dob; // optional
+  private final String dateOfBirth; // optional
   private final String phone; // optional
   private final String address; // optional
 
   private User(UserBuilder builder) {
     this.firstName = builder.firstName;
     this.lastName = builder.lastName;
-    this.dob = builder.dob;
+    this.dateOfBirth = builder.dob;
     this.phone = builder.phone;
     this.address = builder.address;
   }
@@ -22,7 +22,7 @@ public class User {
   }
 
   public String getDob() {
-    return dob;
+    return dateOfBirth;
   }
 
   public String getPhone() {
