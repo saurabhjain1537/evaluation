@@ -9,8 +9,8 @@ public class UserClient {
 
 	public User getUser() {
 		  return new
-		    User.UserBuilder("Jhon", "Doe")
-		    .age(30)
+		    User.UserBuilder("john", "Oconnor")
+		    .dob("01-Jan-1988")
 		    .phone("1234567")
 		    .address("Fake address 1234")
 		    .build();
