@@ -2,7 +2,7 @@ package factory;
 
 public class JavaFactoryPatternExample
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws Exception
   {
     // create a small dog
     Dog dog = DogFactory.getDog("small");

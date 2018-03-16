@@ -2,15 +2,19 @@ package factory;
 
 class DogFactory
 {
-  public static Dog getDog(String criteria)
+  public static Dog getDog(String criteria) throws Exception
   {
-    if ( criteria.equals("small") )
-      return new Poodle();
-    else if ( criteria.equals("big") )
-      return new Rottweiler();
-    else if ( criteria.equals("working") )
-      return new SiberianHusky();
+	  Dog dog = null;
+	  switch(criteria) {
+	  case "small" : dog = new Poodle();
+	  break;
+	  case "big" : dog = new Rottweiler();
+	  break;
+	  case "working" : dog = new SiberianHusky();
+	  break;
+	  default : throw new Exception("Unsupported criteria");
+	  }
 
-    return null;
+    return dog;
   }
 }
