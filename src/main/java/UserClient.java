@@ -13,6 +13,7 @@ public class UserClient {
 		    .dob("01-Jan-1988")
 		    .phone("1234567")
 		    .address("Fake address 1234")
+		    .companyName("XYZ")
 		    .build();
 		}
 }
