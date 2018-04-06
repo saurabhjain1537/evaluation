@@ -1,3 +1,5 @@
+package singleton;
+
 public class SingletonTest {
 
 	private static SingletonTest _instance;
@@ -5,7 +7,7 @@ public class SingletonTest {
 	private SingletonTest() {
 	}
 
-	public static SingletonTest getInstance() {
+	public static synchronized SingletonTest getInstance() {
 		if (_instance == null) {
 			_instance = new SingletonTest();
 		}
