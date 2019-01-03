@@ -10,10 +10,12 @@ public class Manager {
 	
 	public Manager() {
 		super();
+		
 		this.developer = new ArrayList<>();
 		this.developer.add(new Employee(1, "Jim", 100.0));
 		this.developer.add(new Employee(4, "Steve", 100.0));
 		this.developer.add(new Employee(9, "Marina", 100.0));
+		
 		this.tester = new ArrayList<>();
 		this.tester.add(new Employee(4, "Steve", 100.0));
 		this.tester.add(new Employee(9, "Marina", 100.0));
